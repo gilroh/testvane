@@ -1,0 +1,9 @@
+# this is my first model
+browser: safari, chrome, firefox, edge
+os: windows 7, windows 10, ubuntu 18.4, mojave
+system_version: 1.1, 1.2, 1.3
+locale: de, us, jp
+# if browser is edge then os is always windows 10
+if[browser]="edge" then [os] = "windows 10";
+# if os is mojave then browser is chrome or safari
+if[os] = "mojave" then [browser] in {"chrome", "safari"};

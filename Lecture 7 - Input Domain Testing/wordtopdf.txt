@@ -1,0 +1,7 @@
+input_file_type: word, ppt, pdf, excel
+output_file_type: word, ppt, pdf, excel
+file_name: small, capital, mixed, invalid
+file_content: empty, text_only, mixed_content
+email: ALEX@PRAGMATIC.BG, alex@pragmatic.bg, alex.karamfilov@pragmatic-qa.com, 123@123.com
+if[input_file_type] = "word" then [output_file_type] <> "word";
+if[input_file_type] = "pdf" then [output_file_type] <> "pdf";
